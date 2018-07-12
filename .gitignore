@@ -1,0 +1,6 @@
+# Ignore miscellaneous files
+.DS_Store
+__pycache__
+
+# Ignore compiled python files
+*.pyc
