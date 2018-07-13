@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Calculator</title>
+    </head>
+    <body>
+        <div>
+            <form method="POST" action="{% url 'basic' %}">
+                {% csrf_token %}
+                {{ basic_form }}
+                <input type="submit" name="submit" value="submit">
+            </form>
+        </div>
+        <div>
+            {{ answer }}
+        </div>
+    </body>
+</html>
